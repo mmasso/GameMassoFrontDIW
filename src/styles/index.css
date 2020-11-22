@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #212121;
     --primary-color-light: #484848;
     --primary-color-dark: #000000;
@@ -8,51 +8,17 @@
     --font-color: white;
 }
 
-
-*{
+* {
     box-sizing: border-box;
-    margin: 0 auto;
     font-size: 16px;
 }
 
 @media (min-width: 500px) {
-    * {
-        font-size: 4vw;
-      }
+    * {}
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  .topnav #myLinks {
-    display: none;
-  }
-
-.topnav a {
-    background-color: var(--primary-color-dark);
-    height: 15vh;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-.logo img{
-    height: 10vh;
-    
-}
-
-.banner img{
+.banner img {
     width: 100%;
 }
+
+.icon {}
