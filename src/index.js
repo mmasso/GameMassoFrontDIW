@@ -1,8 +1,5 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+$(document).ready(() => {
+    //Load the HTML contents of the header into <header>
+    $("header").load("resources/menu.html");
+    $("footer").load("resources/footer.html");
+});
