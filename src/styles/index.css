@@ -11,6 +11,7 @@
 * {
     box-sizing: border-box;
     font-size: 16px;
+    margin: 0 auto;
 }
 
 @media (min-width: 500px) {
@@ -21,4 +22,61 @@
     width: 100%;
 }
 
-.icon {}
+
+/*Mobile Code Grid*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "title title title title"
+      "subTitle subTitle subTitle subTitle"
+      "textIntroduction textIntroduction textIntroduction textIntroduction"
+      "textIntroduction textIntroduction textIntroduction textIntroduction"
+      "imgIntrouction1 imgIntrouction1 imgIntroduction2 imgIntroduction2"
+      "imgIntrouction1 imgIntrouction1 imgIntroduction2 imgIntroduction2"
+      "descriptionTitle descriptionTitle descriptionTitle descriptionTitle"
+      "descriptionText descriptionText imgDescription1 imgDescription1"
+      "descriptionText descriptionText imgDescription1 imgDescription1"
+      "descriptionText descriptionText imgDescription2 imgDescription2"
+      "descriptionText descriptionText imgDescription2 imgDescription2"
+      "video video video video"
+      "video video video video"
+      "card1 card1 card2 card2"
+      "card1 card1 card2 card2";
+  }
+  
+  .title { grid-area: title; }
+  
+  .subTitle { grid-area: subTitle; }
+  
+  .textIntroduction { grid-area: textIntroduction; }
+  
+  .imgIntrouction1 { grid-area: imgIntrouction1; }
+  
+  .imgIntroduction2 { grid-area: imgIntroduction2; }
+  
+  .descriptionTitle { grid-area: descriptionTitle; }
+  
+  .descriptionText { grid-area: descriptionText; }
+  
+  .imgDescription1 { grid-area: imgDescription1; }
+  
+  .imgDescription2 { grid-area: imgDescription2; }
+  
+  .video { grid-area: video; }
+  
+  .card1 { grid-area: card1; }
+  
+  .card2 { grid-area: card2; }
+
+  /*End Mobile Code Grid*/
+
+  /* For presentation only, no need to copy the code below */
+    .grid-container div {
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+  }
