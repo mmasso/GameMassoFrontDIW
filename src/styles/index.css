@@ -8,10 +8,23 @@
     --font-color: white;
 }
 
+@font-face {
+    font-family: SpaceFont;
+    src: url("/src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+  }
+  
+
 * {
+    font-family: SpaceFont;
+    font-weight: 200;
     box-sizing: border-box;
     font-size: 16px;
+    color: var(--font-color);
     margin: 0 auto;
+}
+
+body {
+    background-color: var(--primary-color-light);
 }
 
 @media (min-width: 500px) {
@@ -26,17 +39,18 @@
 /*Mobile Code Grid*/
 
 .grid-container {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 3px 3px;
     grid-template-areas:
       "title title title title"
       "subTitle subTitle subTitle subTitle"
       "textIntroduction textIntroduction textIntroduction textIntroduction"
       "textIntroduction textIntroduction textIntroduction textIntroduction"
-      "imgIntrouction1 imgIntrouction1 imgIntroduction2 imgIntroduction2"
-      "imgIntrouction1 imgIntrouction1 imgIntroduction2 imgIntroduction2"
+      "imgIntroduction1 imgIntroduction1 imgIntroduction2 imgIntroduction2"
+      "imgIntroduction1 imgIntroduction1 imgIntroduction2 imgIntroduction2"
       "descriptionTitle descriptionTitle descriptionTitle descriptionTitle"
       "descriptionText descriptionText imgDescription1 imgDescription1"
       "descriptionText descriptionText imgDescription1 imgDescription1"
@@ -54,7 +68,7 @@
   
   .textIntroduction { grid-area: textIntroduction; }
   
-  .imgIntrouction1 { grid-area: imgIntrouction1; }
+  .imgIntroduction1 { grid-area: imgIntroduction1; }
   
   .imgIntroduction2 { grid-area: imgIntroduction2; }
   
@@ -74,9 +88,49 @@
 
   /*End Mobile Code Grid*/
 
-  /* For presentation only, no need to copy the code below */
-    .grid-container div {
-    border: 1px solid red;
+
+  .grid-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     height: 100%;
     width: 100%;
+    padding: 2%;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+  }
+
+  .imgIntroduction1,
+  .imgIntroduction2,
+  .imgDescription1,
+  .imgDescription2 {
+    overflow: hidden;
+  }
+
+
+  .imgIntroduction1 img,
+  .imgIntroduction2 img,
+  .imgDescription1 img,
+  .imgDescription2 img {
+    border-radius: 15px;
+    height: 20vh;
+  }
+
+  .title{
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+  }
+
+  .subTitle,
+  .descriptionTitle{
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+  }
+
+  .textIntroduction,
+  .descriptionText{
+      text-align: left;
   }
