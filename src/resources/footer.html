@@ -7,6 +7,7 @@
     <title>Document</title>
     <style>
         .footer-distributed {
+            border-top: white solid 1px;
             display: flex;
             align-items: center;
             background-color: #000;
@@ -15,7 +16,7 @@
             text-align: left;
             font: bold 16px sans-serif;
             padding: 55px 50px;
-            margin-top: 80px
+            margin-top: 10px
         }
         
         .footer-distributed h2 {
@@ -118,11 +119,13 @@
         @media (max-width:880px) {
             .footer-distributed {
                 font: bold 14px sans-serif;
-                flex-flow: column wrap
+                flex-flow: column wrap;
+                justify-items: center;
+                align-items: center;
             }
             .footer-distributed .footer-center,
             .footer-distributed .footer-right {
-                margin-top: 50px
+                margin-top: 50px;
             }
             .footer-distributed .footer-center i {
                 margin-left: 0

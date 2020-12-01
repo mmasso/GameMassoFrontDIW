@@ -11,8 +11,7 @@
 @font-face {
     font-family: SpaceFont;
     src: url("/src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
-  }
-  
+}
 
 * {
     font-family: SpaceFont;
@@ -24,11 +23,7 @@
 }
 
 body {
-    background-color: var(--primary-color-light);
-}
-
-@media (min-width: 500px) {
-    * {}
+    background-color: var(--primary-color-dark);
 }
 
 .banner img {
@@ -42,95 +37,124 @@ body {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 3px 3px;
-    grid-template-areas:
-      "title title title title"
-      "subTitle subTitle subTitle subTitle"
-      "textIntroduction textIntroduction textIntroduction textIntroduction"
-      "textIntroduction textIntroduction textIntroduction textIntroduction"
-      "imgIntroduction1 imgIntroduction1 imgIntroduction2 imgIntroduction2"
-      "imgIntroduction1 imgIntroduction1 imgIntroduction2 imgIntroduction2"
-      "descriptionTitle descriptionTitle descriptionTitle descriptionTitle"
-      "descriptionText descriptionText imgDescription1 imgDescription1"
-      "descriptionText descriptionText imgDescription1 imgDescription1"
-      "descriptionText descriptionText imgDescription2 imgDescription2"
-      "descriptionText descriptionText imgDescription2 imgDescription2"
-      "video video video video"
-      "video video video video"
-      "card1 card1 card2 card2"
-      "card1 card1 card2 card2";
-  }
-  
-  .title { grid-area: title; }
-  
-  .subTitle { grid-area: subTitle; }
-  
-  .textIntroduction { grid-area: textIntroduction; }
-  
-  .imgIntroduction1 { grid-area: imgIntroduction1; }
-  
-  .imgIntroduction2 { grid-area: imgIntroduction2; }
-  
-  .descriptionTitle { grid-area: descriptionTitle; }
-  
-  .descriptionText { grid-area: descriptionText; }
-  
-  .imgDescription1 { grid-area: imgDescription1; }
-  
-  .imgDescription2 { grid-area: imgDescription2; }
-  
-  .video { grid-area: video; }
-  
-  .card1 { grid-area: card1; }
-  
-  .card2 { grid-area: card2; }
+    grid-template-rows: auto auto auto auto 1fr 1fr auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas: "title title title title" "subTitle subTitle subTitle subTitle" "textIntroduction textIntroduction textIntroduction textIntroduction" "textIntroduction textIntroduction textIntroduction textIntroduction" "imgIntroduction1 imgIntroduction1 imgIntroduction1 imgIntroduction1" "imgIntroduction2 imgIntroduction2 imgIntroduction2 imgIntroduction2" "descriptionTitle descriptionTitle descriptionTitle descriptionTitle" "imgDescription1 imgDescription1 imgDescription1 imgDescription1" "descriptionText descriptionText descriptionText descriptionText" "descriptionText descriptionText descriptionText descriptionText" "imgDescription2 imgDescription2 imgDescription2 imgDescription2" "video video video video" "video video video video" "card1 card1 card2 card2" "card3 card3 card4 card4";
+}
 
-  /*End Mobile Code Grid*/
+.title {
+    grid-area: title;
+    background-color: #000000 !important;
+}
+
+.subTitle {
+    grid-area: subTitle;
+}
+
+.textIntroduction {
+    grid-area: textIntroduction;
+}
+
+.imgIntroduction1 {
+    grid-area: imgIntroduction1;
+    background-image: url("/src/assets/img/ow-escapepod_orig.png");
+}
+
+.imgIntroduction2 {
+    grid-area: imgIntroduction2;
+    background-image: url("/src/assets/img/ow-shipinterior_orig.png");
+}
+
+.descriptionTitle {
+    grid-area: descriptionTitle;
+}
+
+.descriptionText {
+    grid-area: descriptionText;
+}
+
+.imgDescription1 {
+    grid-area: imgDescription1;
+    background-image: url("/src/assets/img/ow-giantsdeepruins_orig.png");
+}
+
+.imgDescription2 {
+    grid-area: imgDescription2;
+    background-image: url("/src/assets/img/ow-ashtwin_orig.png");
+}
+
+.video {
+    grid-area: video;
+}
+
+.card1 {
+    grid-area: card1;
+    background-image: url("/src/assets/img/Brittle_Hollow_BH.png");
+}
+
+.card2 {
+    grid-area: card2;
+    background-image: url("/src/assets/img/Dark_Bramble.png");
+}
+
+.card3 {
+    grid-area: card3;
+    background-image: url("/src/assets/img/Giant\'s_Deep.png");
+}
+
+.card4 {
+    grid-area: card4;
+    background-image: url("/src/assets/img/The_Interloper.png");
+}
 
 
-  .grid-container div {
+/*End Mobile Code Grid*/
+
+.grid-container div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    height: 100%;
     width: 100%;
-    padding: 2%;
+    padding: 5%;
     border-radius: 15px;
     background-color: var(--primary-color);
-  }
+}
 
-  .imgIntroduction1,
-  .imgIntroduction2,
-  .imgDescription1,
-  .imgDescription2 {
-    overflow: hidden;
-  }
+.card1,
+.card2,
+.card3,
+.card4,
+.imgIntroduction1,
+.imgIntroduction2,
+.imgDescription1,
+.imgDescription2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: var(--primary-color-light) 2px solid;
+}
 
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    height: max-content;
+    color: var(--secondary-color-light);
+}
 
-  .imgIntroduction1 img,
-  .imgIntroduction2 img,
-  .imgDescription1 img,
-  .imgDescription2 img {
-    border-radius: 15px;
-    height: 20vh;
-  }
+.subTitle,
+.descriptionTitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
 
-  .title{
-      text-align: center;
-      font-size: 30px;
-      font-weight: 600;
-  }
+.textIntroduction,
+.descriptionText {
+    text-align: left;
+}
 
-  .subTitle,
-  .descriptionTitle{
-      text-align: center;
-      font-size: 20px;
-      font-weight: 400;
-  }
-
-  .textIntroduction,
-  .descriptionText{
-      text-align: left;
-  }
+@media (min-width: 500px) {
+    * {}
+}
