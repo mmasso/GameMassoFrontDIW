@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #000000;
+            height: 8vw;
+        }
+        
+        .topnav a {
+            float: left;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 8px 12px;
+            margin-left: 4%;
+            text-decoration: none;
+            font-size: 17px;
+            height: 100%;
+        }
+        
+        .topnav a img {
+            height: 100%;
+        }
+        
+        .topnav :first-child {
+            margin-left: 0;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                height: 76px;
+            }
+            .topnav {
+                height: max-content;
+            }
+        }
+        
+        @media screen and (max-width: 650px) {
+            .topnav.responsive {
+                margin: 0 auto;
+                position: relative;
+                height: max-content;
+            }
+            .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 76px;
+            }
+            .topnav.responsive a:not(:first-child) {
+                float: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                margin-left: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                text-align: left;
+            }
+            .topnav a img {
+                margin: 0 auto;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/src/index.html" class="active">
+            <img src="/src/assets/img/logo.png" alt="">
+        </a>
+        <a href="/src/characters.html">Characters</a>
+        <a href="#Planets">Planets</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
