@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: SpaceFont;
-    src: url("/src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
 * {
@@ -57,12 +57,12 @@ body {
 
 .imgIntroduction1 {
     grid-area: imgIntroduction1;
-    background-image: url("/src/assets/img/ow-escapepod_orig.png");
+    background-image: url("../assets/img/ow-escapepod_orig.png");
 }
 
 .imgIntroduction2 {
     grid-area: imgIntroduction2;
-    background-image: url("/src/assets/img/ow-shipinterior_orig.png");
+    background-image: url("../assets/img/ow-shipinterior_orig.png");
 }
 
 .descriptionTitle {
@@ -75,12 +75,12 @@ body {
 
 .imgDescription1 {
     grid-area: imgDescription1;
-    background-image: url("/src/assets/img/ow-giantsdeepruins_orig.png");
+    background-image: url("../assets/img/ow-giantsdeepruins_orig.png");
 }
 
 .imgDescription2 {
     grid-area: imgDescription2;
-    background-image: url("/src/assets/img/ow-ashtwin_orig.png");
+    background-image: url("../assets/img/ow-ashtwin_orig.png");
 }
 
 .video {
@@ -89,22 +89,22 @@ body {
 
 .card1 {
     grid-area: card1;
-    background-image: url("/src/assets/img/Brittle_Hollow_BH.png");
+    background-image: url("../assets/img/Brittle_Hollow_BH.png");
 }
 
 .card2 {
     grid-area: card2;
-    background-image: url("/src/assets/img/Dark_Bramble.png");
+    background-image: url("../assets/img/Dark_Bramble.png");
 }
 
 .card3 {
     grid-area: card3;
-    background-image: url("/src/assets/img/Giant\'s_Deep.png");
+    background-image: url("../assets/img/Giant\'s_Deep.png");
 }
 
 .card4 {
     grid-area: card4;
-    background-image: url("/src/assets/img/The_Interloper.png");
+    background-image: url("../assets/img/The_Interloper.png");
 }
 
 
