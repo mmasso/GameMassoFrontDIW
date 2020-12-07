@@ -1,0 +1,45 @@
+* {
+    font-family: SpaceFont;
+    font-weight: 200;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--font-color);
+    margin: 0 auto;
+}
+
+:root {
+    --primary-color: #212121;
+    --primary-color-light: #484848;
+    --primary-color-dark: #000000;
+    --secondary-color: #ff6f00;
+    --secondary-color-light: #ffa040;
+    --secondary-color-dark: #c43e00;
+    --font-color: white;
+}
+
+@font-face {
+    font-family: SpaceFont;
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+.character {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90vw;
+    padding: 2%;
+}
+
+img {
+    height: 30vh;
+}
+
+h2 {
+    font-size: xx-large;
+    padding: 1%;
+}
+
+p {
+    padding: 1%;
+}
