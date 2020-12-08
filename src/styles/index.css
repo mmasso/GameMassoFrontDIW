@@ -1,124 +1,148 @@
 :root {
-    --primary-color: #212121;
-    --primary-color-light: #484848;
-    --primary-color-dark: #000000;
-    --secondary-color: #ff6f00;
-    --secondary-color-light: #ffa040;
-    --secondary-color-dark: #c43e00;
-    --font-color: white;
+  --primary-color: #212121;
+  --primary-color-light: #484848;
+  --primary-color-light-transparency: #48484894;
+  --primary-color-dark: #000;
+  --secondary-color: #ff6f00;
+  --secondary-color-light: #ffa040;
+  --secondary-color-dark: #c43e00;
+  --font-color: white;
 }
 
 @font-face {
-    font-family: SpaceFont;
-    src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+  font-family: SpaceFont;
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
 * {
-    font-family: SpaceFont;
-    font-weight: 200;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: var(--font-color);
-    margin: 0 auto;
+  font-family: SpaceFont;
+  font-weight: 200;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: var(--font-color);
+  margin: 0 auto;
+  text-shadow: 0.1em 0.1em 0.05em rgb(0, 0, 0);
 }
 
 body {
-    background-color: var(--primary-color-dark);
+  background-image: url("../assets/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
 }
 
 .banner img {
-    width: 100%;
+  width: 50vw;
+}
+
+.banner {
+  display: flex;
 }
 
 
-/*Mobile Code Grid*/
+/* Mobile Code Grid */
 
 .grid-container {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto 1fr 1fr auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px 5px;
-    grid-template-areas: "title title title title" "subTitle subTitle subTitle subTitle" "textIntroduction textIntroduction textIntroduction textIntroduction" "textIntroduction textIntroduction textIntroduction textIntroduction" "imgIntroduction1 imgIntroduction1 imgIntroduction1 imgIntroduction1" "imgIntroduction2 imgIntroduction2 imgIntroduction2 imgIntroduction2" "descriptionTitle descriptionTitle descriptionTitle descriptionTitle" "imgDescription1 imgDescription1 imgDescription1 imgDescription1" "descriptionText descriptionText descriptionText descriptionText" "descriptionText descriptionText descriptionText descriptionText" "imgDescription2 imgDescription2 imgDescription2 imgDescription2" "video video video video" "video video video video" "card1 card1 card2 card2" "card3 card3 card4 card4";
-}
-
-.title {
-    grid-area: title;
-    background-color: #000000 !important;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr 1fr auto 1fr 1fr 1fr 1fr auto 1fr 1fr auto 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas: "subTitle subTitle subTitle subTitle" "textIntroduction textIntroduction textIntroduction textIntroduction" "textIntroduction textIntroduction textIntroduction textIntroduction" "imgIntroduction1 imgIntroduction1 imgIntroduction1 imgIntroduction1" "imgIntroduction2 imgIntroduction2 imgIntroduction2 imgIntroduction2" "descriptionTitle descriptionTitle descriptionTitle descriptionTitle" "imgDescription1 imgDescription1 imgDescription1 imgDescription1" "descriptionText descriptionText descriptionText descriptionText" "descriptionText descriptionText descriptionText descriptionText" "imgDescription2 imgDescription2 imgDescription2 imgDescription2" "review review review review" "video video video video" "video video video video" "planets planets planets planets" "card1 card1 card2 card2" "card3 card3 card4 card4";
 }
 
 .subTitle {
-    grid-area: subTitle;
+  grid-area: subTitle;
 }
 
 .textIntroduction {
-    grid-area: textIntroduction;
+  grid-area: textIntroduction;
 }
 
 .imgIntroduction1 {
-    grid-area: imgIntroduction1;
-    background-image: url("../assets/img/ow-escapepod_orig.png");
+  grid-area: imgIntroduction1;
+  background-image: url("../assets/img/ow-escapepod_orig.png");
 }
 
 .imgIntroduction2 {
-    grid-area: imgIntroduction2;
-    background-image: url("../assets/img/ow-shipinterior_orig.png");
+  grid-area: imgIntroduction2;
+  background-image: url("../assets/img/ow-shipinterior_orig.png");
 }
 
 .descriptionTitle {
-    grid-area: descriptionTitle;
+  grid-area: descriptionTitle;
 }
 
 .descriptionText {
-    grid-area: descriptionText;
+  grid-area: descriptionText;
 }
 
 .imgDescription1 {
-    grid-area: imgDescription1;
-    background-image: url("../assets/img/ow-giantsdeepruins_orig.png");
+  grid-area: imgDescription1;
+  background-image: url("../assets/img/ow-giantsdeepruins_orig.png");
 }
 
 .imgDescription2 {
-    grid-area: imgDescription2;
-    background-image: url("../assets/img/ow-ashtwin_orig.png");
+  grid-area: imgDescription2;
+  background-image: url("../assets/img/ow-ashtwin_orig.png");
+}
+
+.review {
+  grid-area: review;
 }
 
 .video {
-    grid-area: video;
+  grid-area: video;
+}
+
+.planets {
+  grid-area: planets;
 }
 
 .card1 {
-    grid-area: card1;
-    background-image: url("../assets/img/Brittle_Hollow_BH.png");
+  grid-area: card1;
+  background-image: url("../assets/img/Brittle_Hollow_BH.png");
 }
 
 .card2 {
-    grid-area: card2;
-    background-image: url("../assets/img/Dark_Bramble.png");
+  grid-area: card2;
+  background-image: url("../assets/img/Dark_Bramble.png");
 }
 
 .card3 {
-    grid-area: card3;
-    background-image: url("../assets/img/Giant\'s_Deep.png");
+  grid-area: card3;
+  background-image: url("../assets/img/Giant\'s_Deep.png");
 }
 
 .card4 {
-    grid-area: card4;
-    background-image: url("../assets/img/The_Interloper.png");
+  grid-area: card4;
+  background-image: url("../assets/img/The_Interloper.png");
 }
 
 
-/*End Mobile Code Grid*/
+/* End Mobile Code Grid */
+
+.subTitle,
+.descriptionTitle,
+.review,
+.planets {
+  background-color: transparent !important;
+  font-size: xx-large;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-align: center;
+}
 
 .grid-container div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    padding: 5%;
-    border-radius: 15px;
-    background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 4%;
+  border-radius: 15px;
+  background-color: var(--primary-color-light-transparency);
 }
 
 .card1,
@@ -129,32 +153,41 @@ body {
 .imgIntroduction2,
 .imgDescription1,
 .imgDescription2 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: var(--primary-color-light) 2px solid;
-}
-
-.title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    height: max-content;
-    color: var(--secondary-color-light);
-}
-
-.subTitle,
-.descriptionTitle {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: var(--primary-color-light) 2px solid;
 }
 
 .textIntroduction,
 .descriptionText {
-    text-align: left;
+  text-align: left;
 }
 
 @media (min-width: 500px) {
-    * {}
+  .grid-container {
+    grid-template-rows: auto auto auto 3fr 3fr auto 2fr 1fr 1fr 2fr auto 2fr 2fr auto 2fr 2fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto 2fr 1fr auto 3fr auto 2fr 2fr;
+    gap: 5px 5px;
+    grid-template-areas: "subTitle subTitle subTitle subTitle" "textIntroduction textIntroduction imgIntroduction1 imgIntroduction1" "textIntroduction textIntroduction imgIntroduction2 imgIntroduction2" "descriptionTitle descriptionTitle descriptionTitle descriptionTitle" "imgDescription1 imgDescription1 imgDescription2 imgDescription2" "descriptionText descriptionText descriptionText descriptionText" "review review review review" "video video video video" "planets planets planets planets" "card1 card1 card2 card2" "card3 card3 card4 card4";
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 2fr 2fr auto 4fr 2fr auto 7fr auto 4fr 4fr;
+    gap: 5px 5px;
+    grid-template-areas: "subTitle subTitle subTitle subTitle" "textIntroduction textIntroduction imgIntroduction1 imgIntroduction1" "textIntroduction textIntroduction imgIntroduction2 imgIntroduction2" "descriptionTitle descriptionTitle descriptionTitle descriptionTitle" "imgDescription1 imgDescription1 imgDescription2 imgDescription2" "descriptionText descriptionText descriptionText descriptionText" "review review review review" "video video video video" "planets planets planets planets" "card1 card1 card2 card2" "card3 card3 card4 card4";
+  }
 }
