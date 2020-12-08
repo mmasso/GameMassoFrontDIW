@@ -47,6 +47,8 @@ function showCharacters(dades) {
 
         //Add the image
         let img = document.createElement("img");
+        //Add the class
+        img.classList.add("pics");
         img.src = character.img;
         div.appendChild(img);
     });
