@@ -52,38 +52,38 @@ body {
   grid-template-areas: "subTitle subTitle subTitle subTitle" "textIntroduction textIntroduction textIntroduction textIntroduction" "textIntroduction textIntroduction textIntroduction textIntroduction" "imgIntroduction1 imgIntroduction1 imgIntroduction1 imgIntroduction1" "imgIntroduction2 imgIntroduction2 imgIntroduction2 imgIntroduction2" "descriptionTitle descriptionTitle descriptionTitle descriptionTitle" "imgDescription1 imgDescription1 imgDescription1 imgDescription1" "descriptionText descriptionText descriptionText descriptionText" "descriptionText descriptionText descriptionText descriptionText" "imgDescription2 imgDescription2 imgDescription2 imgDescription2" "review review review review" "video video video video" "video video video video" "planets planets planets planets" "card1 card1 card2 card2" "card3 card3 card4 card4";
 }
 
-.subTitle {
+.sub_title {
   grid-area: subTitle;
 }
 
-.textIntroduction {
+.text_introduction {
   grid-area: textIntroduction;
 }
 
-.imgIntroduction1 {
+.img_introduction1 {
   grid-area: imgIntroduction1;
   background-image: url("../assets/img/ow-escapepod_orig.png");
 }
 
-.imgIntroduction2 {
+.img_introduction2 {
   grid-area: imgIntroduction2;
   background-image: url("../assets/img/ow-shipinterior_orig.png");
 }
 
-.descriptionTitle {
+.description_title {
   grid-area: descriptionTitle;
 }
 
-.descriptionText {
+.description_text {
   grid-area: descriptionText;
 }
 
-.imgDescription1 {
+.img_description1 {
   grid-area: imgDescription1;
   background-image: url("../assets/img/ow-giantsdeepruins_orig.png");
 }
 
-.imgDescription2 {
+.img_description2 {
   grid-area: imgDescription2;
   background-image: url("../assets/img/ow-ashtwin_orig.png");
 }
@@ -123,8 +123,8 @@ body {
 
 /* End Mobile Code Grid */
 
-.subTitle,
-.descriptionTitle,
+.sub_title,
+.description_title,
 .review,
 .planets {
   background-color: transparent !important;
@@ -134,7 +134,7 @@ body {
   text-align: center;
 }
 
-.grid-container div {
+.grid_container div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,29 +149,29 @@ body {
 .card2,
 .card3,
 .card4,
-.imgIntroduction1,
-.imgIntroduction2,
-.imgDescription1,
-.imgDescription2 {
+.img_introduction1,
+.img_introduction2,
+.img_description1,
+.img_description2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border: var(--primary-color-light) 2px solid;
 }
 
-.textIntroduction,
-.descriptionText {
+.text_introduction,
+.description_text {
   text-align: left;
 }
 
 @media (min-width: 500px) {
-  .grid-container {
+  .grid_container {
     grid-template-rows: auto auto auto 3fr 3fr auto 2fr 1fr 1fr 2fr auto 2fr 2fr auto 2fr 2fr;
   }
 }
 
 @media (min-width: 900px) {
-  .grid-container {
+  .grid_container {
     width: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -182,7 +182,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .grid-container {
+  .grid_container {
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
