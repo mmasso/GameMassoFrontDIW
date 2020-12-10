@@ -43,7 +43,7 @@ body {
 
 /* Mobile Code Grid */
 
-.grid-container {
+.grid_container {
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

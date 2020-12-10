@@ -62,12 +62,13 @@ body {
   flex-flow: column wrap;
   justify-items: center;
   align-content: center;
-  width: 500px;
-  height: 600px;
+  width: 600px;
+  height: 700px;
   overflow: hidden;
   margin-top: 3%;
   background-color: var(--primary-color-light-transparency);
   border-radius: 15px;
+  padding-bottom: 5%;
 }
 
 .pics {

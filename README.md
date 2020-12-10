@@ -17,3 +17,7 @@ La página web disenyada a l'assignatura de DIW, es sobre un joc anomenat Outer 
 # Webgrafia:
 
 https://outerwilds.gamepedia.com/Outer_Wilds_Wiki
+
+# Video!
+
+https://youtu.be/dmbQpfanoTs
