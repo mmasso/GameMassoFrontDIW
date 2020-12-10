@@ -1,0 +1,49 @@
+{
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "concat": "^1.0.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "name": "gamemassofrontdiw",
+  "description": "Color palette:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmasso/GameMassoFrontDIW.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "MMasso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmasso/GameMassoFrontDIW/issues"
+  },
+  "homepage": "https://github.com/mmasso/GameMassoFrontDIW#readme",
+  "dependencies": {
+    "audit": "^0.0.6",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "cssnano": "^4.1.10",
+    "fix": "^0.0.3",
+    "gulp-font": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
